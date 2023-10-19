@@ -20,4 +20,8 @@ export class LogsComponent {
   selectLog(log: Log) {
     this.logService.setFormLog(log)
   }
+
+  deleteLog(log: Log) {
+    this.logService.deleteLog(log);
+  }
 }
