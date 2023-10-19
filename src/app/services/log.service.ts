@@ -21,7 +21,7 @@ export class LogService {
 
   getLogs(): Observable<Log[]> {
     const logsData = localStorage.getItem('logs');
-    this.logs = logsData ? JSON.parse(logsData) : null;
+    this.logs = logsData ? JSON.parse(logsData) : [];
     return of(this.logs);
   }
 
